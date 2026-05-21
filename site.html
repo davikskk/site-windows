@@ -6,7 +6,7 @@
 <title>Zen</title>
 <style>
 body {
-background-image: url("b.jpg");
+background-image: url("https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 display: flex;
@@ -56,10 +56,11 @@ font-family: Georgia, 'Times New Roman', serif;
 padding: 10px 20px;
 cursor: pointer;
 color: white;
+transition: all 0.5s ease
 }
 .botao:hover {
-background-color: rgba(255, 255, 255, 0.4);
-transition: background-color 0.2s;
+    box-shadow:0 8px 32px rgba(0, 0, 0, 0.392);
+    transform: scale(1.2)
 }
 </style>
 </head>
@@ -74,20 +75,20 @@ transition: background-color 0.2s;
 <br>
 
 <div class="container">
-    <a href="file:///C:/Users/aluno.senai/Downloads/a/saibamais.html" style="text-decoration: none; color: inherit;">
-        <div class="quadradome" style="min-height: 40px; width: 100px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>saiba mais</p></div>
+    <a href="" style="text-decoration: none; color: inherit;">
+        <div class="botao" style="min-height: 40px; width: 100px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>saiba mais</p></div>
     </a>
     <a href="https://frutigeraeroarchive.org/televisions/panasonic_standard_crt_tv" style="text-decoration: none; color: inherit;">
-        <div class="quadradome" style="min-height: 40px; width: 140px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>televisão</p></div>
+        <div class="botao" style="min-height: 40px; width: 140px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>televisão</p></div>
     </a>
     <a href="https://frutigeraeroarchive.org/sketchbook" style="text-decoration: none; color: inherit;">
-        <div class="quadradome" style="min-height: 40px; width: 120px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>sketchbook</p></div>
+        <div class="botao" style="min-height: 40px; width: 120px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>sketchbook</p></div>
     </a>
     <a href="https://aesthetics.fandom.com/wiki/Frutiger_Aero" style="text-decoration: none; color: inherit;">
-        <div class="quadradome" style="min-height: 40px; width: 110px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>wiki</p></div>
+        <div class="botao" style="min-height: 40px; width: 110px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>wiki</p></div>
     </a>
     <a href="https://frutigeraeroarchive.org/wallpapers" style="text-decoration: none; color: inherit;">
-        <div class="quadradome" style="min-height: 40px; width: 200px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>wallpapers</p></div>
+        <div class="botao" style="min-height: 40px; width: 200px; display: flex; justify-content: center; align-items: center; padding: 8px;"><p>wallpapers</p></div>
     </a>
 </div>
 
@@ -97,7 +98,7 @@ transition: background-color 0.2s;
     <div class="quadradome" style="min-height: 450px; width: 35%; padding: 10px;">
         <h2 style="padding: 5px;">bem vindo!</h2>
         <p style="padding: 5px;">você está no site de davi pequeno, a proposta do site é a preservação do estilo dos anos 2000 popularizado pelos OS do android e do windows 7, junto disso trazemos recursos bons para pessoas que querem ter um pouco dessa experiência</p>
-        <img src="icon.jpg" style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto">
+        <img src="https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/icon.jpg" style="max-width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto">
     </div>
     <div class="cont" style="flex: 1;">
         <div class="quadradome" style="padding: 20px; width: 95%;">
@@ -114,7 +115,7 @@ transition: background-color 0.2s;
 <button class="botao" onclick="trocarFundo()">trocar wallpaper</button>
 
 <script>
-const fundos = ["b.jpg", "b2.jpg", "b3.jpg", "b4.jpg", "b5.jpg", "b6.jpg", "b7.jpg", "b8.jpg", "b9.jpg", "b10.jpg", "b11.jpg"];
+const fundos = ["https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b2.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b3.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b4.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b5.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b6.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b7.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b8.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b9.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b10.jpg", "https://raw.githubusercontent.com/davikskk/site-windows/refs/heads/main/imagens/b11.jpg"];
 let atual = 0;
 
 function trocarFundo() {
